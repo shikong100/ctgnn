@@ -1,0 +1,1 @@
+Epoch 39: 100%|█████████████| 4572/4572 [26:27<00:00,  2.88it/s, loss=0.149, v_num=on_1, val_defect_loss=0.0694, val_water_loss=0.507, train_loss=0.129, train_defect_loss=0.0536, train_water_loss=0.335]

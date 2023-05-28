@@ -1,0 +1,48 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "python": "/home/slj108/miniconda3/envs/qh/bin/python",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            // "args": [
+            //     "--precision",16,
+            //     "--batch_size",128,
+            //     "--max_epochs",40,
+            //     "--gpus",2,
+            //     "--accelerator","ddp",
+            //     "--model","renet50",
+            //     "--training_task","defect",
+            //     "--class_weight","Effective",
+            //     "--effective_beta",0.9999,
+            //     "--progress_bar_refresh_rate",500, //每500张图片刷新一次控制台进度条
+            //     "--flush_logs_every_n_steps",1000,
+            //     "--log_every_n_steps",100,
+            //     "--ann_root","./annotations",
+            //     "--data_root","../devdisk/Sewer",
+            //     "--log_save_dir","./logs"
+            // ]
+            // "args": [ //iterate_results.dir.py
+            //     "--ann_root","/mnt/data0/qh/Sewer/annotations",
+            //     "--data_root","/mnt/data0/qh/Sewer",
+            //     "--results_output","./results",
+            //     "--log_input","./logs",
+            //     "--split","Train"
+            // ]
+            "args": [ //calculate_results.py
+                "--output_path","./resultsMetrics",
+                "--split","Train",
+                "--score_path","./results",
+                "--gt_path","./annotations"
+            ]
+        }
+    ]
+}
